@@ -1,0 +1,26 @@
+{
+  "name": "cooshu_plugins_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.1.10/AppHostWebClient_Plugins_Html.git"
+  },
+  "author": "cooshu",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.5.4",
+    "babel-loader": "^8.1.0",
+    "ts-loader": "^7.0.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "typescript": "^3.8.3"
+  }
+}
