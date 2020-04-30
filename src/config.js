@@ -1,5 +1,4 @@
 import div from './div/config';
-import a from './a/config';
 
 import zh from './locales/zh-CN';
 import en from './locales/en-US';
@@ -12,7 +11,7 @@ export const config = {
     {
       name: '导航',
       children: {
-        div,a,
+        div,
       },
     },
   ],
