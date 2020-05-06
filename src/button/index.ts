@@ -1,14 +1,14 @@
-export class divDom {
+export class buttonDom {
 
   public render({ el }: { el: HTMLElement }) {
     this.el = el;
 
-    if (!this.aEl) {
-      this.aEl = document.createElement('button');
-      this.aEl.style.height = '10px';
-      this.aEl.style.width = '30px';
-      this.el.append(this.aEl);
-      this.el.style.height = '10px';
+    if (!this.buttonEL) {
+      this.buttonEL = document.createElement('button');
+      this.buttonEL.innerText = '按钮';
+      this.buttonEL.style.height = '30px';
+      this.buttonEL.style.width = '55px';
+      this.el.append(this.buttonEL);
     }
 
     return [null];
@@ -18,9 +18,9 @@ export class divDom {
     return [`button`];
   }
 
-  private aEl: HTMLElement | null = null;
+  private buttonEL: HTMLElement | null = null;
 
   private el: HTMLElement | null = null;
 }
 
-export default divDom;
+export default buttonDom;

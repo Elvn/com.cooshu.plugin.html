@@ -1,4 +1,4 @@
 export default {
-  pluginName: 'button',
+  pluginName: 'img',
   pluginType: 'container',
 };

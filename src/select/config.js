@@ -1,4 +1,4 @@
 export default {
-  pluginName: 'button',
+  pluginName: 'select',
   pluginType: 'container',
 };

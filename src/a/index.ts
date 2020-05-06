@@ -1,4 +1,4 @@
-export class divDom {
+export class aDom {
 
   public render({ el }: { el: HTMLElement }) {
     this.el = el;
@@ -23,4 +23,4 @@ export class divDom {
   private el: HTMLElement | null = null;
 }
 
-export default divDom;
+export default aDom;
