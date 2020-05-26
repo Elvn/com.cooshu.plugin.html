@@ -1,10 +1,10 @@
 const returnNewFileContent = (fileContent, filename) => {
   const pluginPrefixMin = '/* eslint-disable */(function(win) {function CooshuScope() {window.cooshuHelper.cloneWindow(win, this);}CooshuScope.prototype.init = function() {var window = this;var module;';
   const pluginSuffix1Min = 'window.cooshuHelper.libraryRegisterFromJsFile(window.library, module';
-  const pluginSuffix2Min = ');};new CooshuScope().init();})(window);';
+  const pluginSuffix2Min = ', document.currentScript.src);};new CooshuScope().init();})(window);';
   const configSuffixMin = '/* eslint-disable */(function(window) {var module;';
   const configPrefix1Min = 'window.cooshuHelper.libraryRegisterFromJsFile(window.config, module';
-  const configPrefix2Min = ');})(window);';
+  const configPrefix2Min = ', document.currentScript.src);})(window);';
 
   const pluginName = filename.split('/')[0];
   let formatFileContent = pluginPrefixMin + fileContent + pluginSuffix1Min + `,'${pluginName}','index'` + pluginSuffix2Min;
