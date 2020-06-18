@@ -1,19 +1,19 @@
-export class divDom {
+import { IPlugin, IPluginRenderArgs, IPluginUpdateArgs } from 'kusu-plugin-sdk';
 
-  public render({ el }: { el: HTMLElement }) {
-    this.el = el;
+export class divDom implements IPlugin {
+
+  public render({ props, pluginWrapperEl, kusuTools }: IPluginRenderArgs) {
+    this.el = pluginWrapperEl;
 
     if (!this.divEl) {
       this.divEl = document.createElement('div');
+      this.divEl.className += kusuTools.defineContainer('container');
       this.el.append(this.divEl);
       this.el.style.height = '10px';
     }
-
-    return [null];
   }
 
-  public update({}) {
-    return [`div`];
+  public update({}: IPluginUpdateArgs) {
   }
 
   private divEl: HTMLElement | null = null;

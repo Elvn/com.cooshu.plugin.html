@@ -19,12 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: [
-          'babel-loader',
-          {
-            loader: 'ts-loader',
-          },
-        ],
+        use: ['babel-loader', { loader: 'ts-loader' }],
       },
       {
         test: /\.js|jsx?$/,
@@ -43,5 +38,6 @@ module.exports = {
     contentBase: './dist',
     port: 60001,
     publicPath: '/plugins/',
+    disableHostCheck: true,
   },
 };
