@@ -1,4 +1,4 @@
-import { IPluginConfig } from 'kusu-plugin-sdk/src/ILibraryConfig';
+import { IPluginConfig } from 'kusu-plugin-sdk';
 
 const config: IPluginConfig = {
   pluginName: '@div',
