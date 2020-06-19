@@ -34,6 +34,7 @@ module.exports = {
   plugins: [
     new AddScopePlugin(),
   ],
+  devtool: 'source-map',
   devServer: {
     contentBase: './dist',
     port: 60001,
