@@ -1,5 +1,6 @@
 const path = require('path');
-const AddScopePlugin = require('./AddScopePlugin');
+// const AddScopePlugin = require('./AddScopePlugin');
+const { AddScopePlugin } = require('kusu-plugin-sdk');
 // const webpack = require('webpack');
 
 const resolve = (url) => {
@@ -34,11 +35,8 @@ module.exports = {
   plugins: [
     new AddScopePlugin(),
   ],
-  devtool: 'source-map',
   devServer: {
-    contentBase: './dist',
     port: 60001,
-    publicPath: '/plugins/',
     disableHostCheck: true,
   },
 };
