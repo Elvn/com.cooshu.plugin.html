@@ -37,7 +37,7 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new AddScopePlugin({
-      'index': pluginConfig,
+      'com.cooshu.html/index': pluginConfig,
     }),
   ],
   devServer: {
