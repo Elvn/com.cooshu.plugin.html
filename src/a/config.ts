@@ -1,10 +1,10 @@
 import { IPluginConfig } from 'kusu-plugin-sdk';
 
-const divConfig: IPluginConfig = {
-  pluginName: '@div',
+const aConfig: IPluginConfig = {
+  pluginName: '@a',
   pluginType: 'container',
   attributes: [],
-  styles: [],
+  styles: []
 };
 
-export default divConfig;
+export default aConfig;
