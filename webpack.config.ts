@@ -11,7 +11,7 @@ const resolve = (url: string) => {
 
 const config: webpack.Configuration = {
   entry: {
-    'com.cooshu.html/index': './src',
+    'index': './src',
     //'com.cooshu.html/config': './src/config.js',
   },
   output: {
@@ -37,7 +37,7 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new AddScopePlugin({
-      'com.cooshu.html/index': pluginConfig,
+      'index': pluginConfig,
     }),
   ],
   devServer: {
